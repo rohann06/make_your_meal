@@ -1,32 +1,32 @@
+import { motion } from "framer-motion";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import Card from "../../components/Card";
 
-const Searched = () => {
+const Cuisine = () => {
+  const [cuisines, setCuisines] = useState([]);
   const router = useRouter();
-  const { sear } = router.query;
+  const { cuisine } = router.query;
 
-  const [results, setResults] = useState([]);
-
-  const getSearch = async () => {
+  const getCuisine = async () => {
     const key = process.env.NEXT_PUBLIC_API_KEY2;
     const api = await fetch(
-      `https://api.spoonacular.com/recipes/complexSearch?apiKey=${key}&number=20&query=${sear}`
+      `https://api.spoonacular.com/recipes/complexSearch?apiKey=${key}&number=12&cuisine=${cuisine}`
     );
+
     const data = await api.json();
-    setResults(data.results);
+    setCuisines(data.results);
+    console.log(data.results);
   };
 
   useEffect(() => {
-    getSearch();
-  }, [sear]);
+    getCuisine();
+  }, [cuisine]);
 
   return (
     <div className=" my-5">
-      <h1 className=" font-headings text-slate-600 font-bold lg:text-[30px] my-5">{sear} recipes 🍽️ : </h1>
-
       <div className=" grid gap-10 grid-cols-4">
-        {results.map((result) => (
+        {cuisines.map((result) => (
           <div key={result.id}>
             <Card title={result.title} image={result.image} id={result.id}/>
           </div>
@@ -36,4 +36,4 @@ const Searched = () => {
   );
 };
 
-export default Searched;
+export default Cuisine;
