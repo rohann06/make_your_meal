@@ -9,6 +9,7 @@ module.exports = {
       fontFamily:{
         'normal_text':'Varela Round',
         'headings': 'Asap',
+        'nav_fonts':'Kaushan Script',
       }
     },
   },

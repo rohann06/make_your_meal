@@ -21,7 +21,7 @@ const HeroSectoin = () => {
     } else {
       const key = process.env.NEXT_PUBLIC_API_KEY;
       const api = await fetch(
-        `https://api.spoonacular.com/recipes/random?apiKey=${key}&number=10`
+        `https://api.spoonacular.com/recipes/random?apiKey=${key}&number=15`
       );
       const data = await api.json();
 
@@ -32,7 +32,7 @@ const HeroSectoin = () => {
 
   return (
     <>
-      <div className=" mt-[5rem] mb-10">
+      <div className=" mt-[2rem] mb-10">
         <h1 className=" font-headings text-slate-600 font-bold text-[22px] lg:text-[25px] my-5">
           Populer recipes 🍴
         </h1>
