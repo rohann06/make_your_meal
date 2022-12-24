@@ -25,7 +25,7 @@ const HeroSectoin = () => {
       );
       const data = await api.json();
 
-      localStorage.getItem('populer', JSON.stringify(data.recipes));
+      localStorage.setItem('populer', JSON.stringify(data.recipes));
       setPopuler(data.recipes);
     }
   };

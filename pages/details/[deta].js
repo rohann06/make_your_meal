@@ -3,14 +3,16 @@ import { useEffect, useState } from "react";
 import {IoMdArrowDroprightCircle} from 'react-icons/io'
 
 const Details = () => {
-  const [details, setDetails] = useState({});
+  const [details, setDetails] = useState(null);
   const router = useRouter();
   const { deta } = router.query;
+  const headers = {"Content-Type": "application/json",
+}
 
   const fetchData = async () => {
     const key = process.env.NEXT_PUBLIC_API_KEY2;
     const api = await fetch(
-      `https://api.spoonacular.com/recipes/${deta}/information?apiKey=${key}`
+      `https://api.spoonacular.com/recipes/${deta}/information?apiKey=${key}`, {headers}
     );
     const data = await api.json();
     setDetails(data);
@@ -21,15 +23,16 @@ const Details = () => {
     fetchData();
   }, [deta]);
 
+
   return (
-    <div className=" flex justify-center  gap-20 mt-20 mb-20">
+    <div className=" flex justify-center  gap-20 mt-20 mb-7">
       <div>
         <div>
           <h1 className=" text-[40px] text-slate-600 font-extrabold text-left font-nav_fonts">
-            {details.title}:
+            {details && details.title}:
           </h1>
           <img
-            src={details.image}
+            src={details && details.image}
             alt="images"
             className=" mt-5 h-72 rounded-3xl shadow-xl "
           />
@@ -39,9 +42,9 @@ const Details = () => {
           <h1 className=" font-semibold font-nav_fonts text-slate-500 text-3xl mb-2 mt-10">
             Ingredients:
           </h1>
-          <ul>
-            {details.extendedIngredients.map((ingredient) => 
-              <li className=" text-slate-500 flex font-medium font-normal_text my-[10px]" key={ingredient.id}><IoMdArrowDroprightCircle/> {ingredient.original}</li>
+          <ul className=" mt-5">
+            {details && details.extendedIngredients.map((ingredient) => 
+              <li className=" text-slate-500 flex font-medium font-normal_text my-[10px]" key={ingredient.id}><IoMdArrowDroprightCircle/> {ingredient.original} </li>
             )}
           </ul>
         </div>
@@ -54,16 +57,15 @@ const Details = () => {
         <div className=" max-w-2xl font-normal_text text-[19px] ">
           <h1
             className=" font-semibold"
-            dangerouslySetInnerHTML={{ __html: details.summary }}
+            dangerouslySetInnerHTML={{ __html: details && details.summary }}
           ></h1>
           <div>
             <h1 className=" font-semibold font-nav_fonts text-slate-500 text-3xl mt-7 mb-2">
-              {" "}
               Instructions:
             </h1>
             <h1
               className=" text-slate-700"
-              dangerouslySetInnerHTML={{ __html: details.instructions }}
+              dangerouslySetInnerHTML={{ __html:details && details.instructions }}
             ></h1>
           </div>
         </div>

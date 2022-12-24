@@ -16,14 +16,15 @@ const HeroSectoin = () => {
 
     if (check) {
       setHeroSection(JSON.parse(check));
-    } else {
+    } 
+    else {
       const key = process.env.NEXT_PUBLIC_API_KEY2;
       const api = await fetch(
         `https://api.spoonacular.com/recipes/random?apiKey=${key}&number=10&tags=sweets`
       );
       const data = await api.json();
-
-      localStorage.getItem('herosectoin', JSON.stringify(data.recipes));
+      
+      localStorage.setItem('herosectoin', JSON.stringify(data.recipes));
       setHeroSection(data.recipes);
     }
   };

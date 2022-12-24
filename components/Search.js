@@ -10,6 +10,7 @@ const Search = () => {
   const submitHandler = (e) => {
     e.preventDefault();
     router.push(`/searched/${input}`);
+    setInput('');
   };
 
   return (
