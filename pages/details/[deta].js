@@ -10,7 +10,7 @@ const Details = () => {
 }
 
   const fetchData = async () => {
-    const key = process.env.NEXT_PUBLIC_API_KEY2;
+    const key = process.env.NEXT_PUBLIC_API_KEY3;
     const api = await fetch(
       `https://api.spoonacular.com/recipes/${deta}/information?apiKey=${key}`, {headers}
     );
@@ -44,7 +44,7 @@ const Details = () => {
           </h1>
           <ul className=" mt-5">
             {details && details.extendedIngredients.map((ingredient) => 
-              <li className=" text-slate-500 flex font-medium font-normal_text my-[10px]" key={ingredient.id}><IoMdArrowDroprightCircle/> {ingredient.original} </li>
+              <li className=" text-slate-500 flex font-medium font-normal_text my-[10px]" key={ingredient.id}><IoMdArrowDroprightCircle className=" mt-0.5"/> {ingredient.original} </li>
             )}
           </ul>
         </div>

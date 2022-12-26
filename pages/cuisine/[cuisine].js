@@ -9,7 +9,7 @@ const Cuisine = () => {
   const { cuisine } = router.query;
 
   const getCuisine = async () => {
-    const key = process.env.NEXT_PUBLIC_API_KEY2;
+    const key = process.env.NEXT_PUBLIC_API_KEY3;
     const api = await fetch(
       `https://api.spoonacular.com/recipes/complexSearch?apiKey=${key}&number=12&cuisine=${cuisine}`
     );
