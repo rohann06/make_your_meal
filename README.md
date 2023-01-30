@@ -5,6 +5,7 @@
 ## Live application
 
 ## Technologies used
+[![Already deployed version](https://vercel.com/button)](https://make-your-meal.vercel.app/)
 
 I've used ![Spoonacular](https://spoonacular.com/food-api) to get the reciepy API, there are some libraries and frameworks I've used as bellow 
 
