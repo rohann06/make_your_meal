@@ -6,7 +6,7 @@
 
 ## Technologies used
 
-I've used  <a href='https://spoonacular.com/food-api target="_blank" rel="noopener noreferrer"'>Spoonacular</a> to get the reciepy API, there are some libraries and frameworks I've used as bellow 
+I've used ![Spoonacular](https://spoonacular.com/food-api) to get the reciepy API, there are some libraries and frameworks I've used as bellow 
 
 - **NextJs**
 - **Tailwind css**
