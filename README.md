@@ -1,34 +1,26 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Make Your Meal 🍽️
+#### This is a reciepy website in witch user can find the reciepies by the reiepy name, cuisine name, ingredient name and it will give user a good reciepies
+#### The intension behind this project was to learn working with API and styling using tailwind css.
 
-## Getting Started
+## Live application
 
-First, run the development server:
+## Technologies used
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+I've used  <a href='https://spoonacular.com/food-api target="_blank" rel="noopener noreferrer"'>Spoonacular</a> to get the reciepy API, there are some libraries and frameworks I've used as bellow 
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **NextJs**
+- **Tailwind css**
+- **Framer motion**
+- **React splide**
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Functionality
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+There are 2 pages in this website 
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+### Home page
+![makeYourMeal_project_image](https://user-images.githubusercontent.com/75326769/215412198-3ab963db-d9b1-4685-8ab4-2f418ce1d47f.png)
 
-## Learn More
+### Raciepy page
+![image](https://user-images.githubusercontent.com/75326769/215431233-58f81f35-89be-40ad-84ab-0230fa2b6ec6.png)
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+#### There are some of the cuisine options like Italian, american, thai and chinese are already mentioned
