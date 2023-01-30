@@ -17,6 +17,8 @@ I've used ![Spoonacular](https://spoonacular.com/food-api) to get the reciepy AP
 ## Functionality
 
 There are 2 pages in this website 
+#### There are some of the cuisine options like Italian, american, thai and chinese are already mentioned
+#### User can search the the reciepy by adding a reciepyname or ingredient or cuisine name in to the search bar, by clicking the search button the reciepys will be appear
 
 ### Home page
 ![makeYourMeal_project_image](https://user-images.githubusercontent.com/75326769/215412198-3ab963db-d9b1-4685-8ab4-2f418ce1d47f.png)
@@ -24,5 +26,5 @@ There are 2 pages in this website
 ### Raciepy page
 ![image](https://user-images.githubusercontent.com/75326769/215431233-58f81f35-89be-40ad-84ab-0230fa2b6ec6.png)
 
-#### There are some of the cuisine options like Italian, american, thai and chinese are already mentioned
-#### User can search the the reciepy by adding a reciepyname or ingredient or cuisine name in to the search bar, by clicking the search button the reciepys will be appear
+
+
