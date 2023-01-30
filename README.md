@@ -3,9 +3,9 @@
 #### The intension behind this project was to learn working with API and styling using tailwind css.
 
 ## Live application
+[![Already deployed version](https://vercel.com/button)](https://make-your-meal.vercel.app/)
 
 ## Technologies used
-[![Already deployed version](https://vercel.com/button)](https://make-your-meal.vercel.app/)
 
 I've used ![Spoonacular](https://spoonacular.com/food-api) to get the reciepy API, there are some libraries and frameworks I've used as bellow 
 
