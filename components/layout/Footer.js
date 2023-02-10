@@ -4,7 +4,7 @@ const Footer = () => {
       <h4 className=" font-light text-slate-500">
         Made with💖by{" "}
         <a
-          href="https://rohan-delta.vercel.app/"
+          href="https://rohan06.vercel.app/"
           target="_blank"
           rel="noopener noreferrer"
         >
