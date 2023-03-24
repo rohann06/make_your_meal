@@ -14,9 +14,9 @@ const Search = () => {
   };
 
   return (
-    <form className=" relative mx-60 my-10">
-      <div className=" w-full relative flex">
-        <FaSearch className=" text-slate-50 font-semibold text-2xl absolute top-3 left-3" />
+    <form className="  my-10">
+      <div className=" relative flex justify-center items-center">
+        <FaSearch className=" text-slate-50 lg:text-[1.5rem] text-[1rem] absolute lg:left-52 left-3" />
         <input
           onChange={(e) => setInput(e.target.value)}
           type="text"
@@ -24,9 +24,9 @@ const Search = () => {
           autoComplete="on"
           placeholder="Search recipes"
           value={input}
-          className="bg-gradient-to-r from-slate-700 via-slate-800 to-slate-900 text-slate-50 text-[15PX] font-normal_text border-none py-[0.7rem] px-[4rem] w-full rounded-full outline-none"
+          className="bg-gradient-to-r from-slate-700 via-slate-800 to-slate-900 text-slate-50 text-[15px]  font-normal_text border-none lg:py-[0.7rem] py-[0.4rem] px-[4rem] rounded-l-full outline-none lg:w-[60%] w-[100%] "
         />
-        <button onClick={submitHandler} type='submit' className=" text-lg text-slate-50 font-semibold absolute  right-0 border-none bg-slate-600 hover:bg-slate-700  rounded-tr-full rounded-br-full py-[0.55rem]  px-[2rem]">Search</button>
+        <button onClick={submitHandler} type='submit' className=" text-[18px] text-slate-50 font-semibold border-none bg-slate-600 hover:bg-slate-700  rounded-r-full lg:py-[0.55rem] py-[0.24rem] lg:px-[2rem] px-[1rem]">Search</button>
       </div>
     </form>
   );

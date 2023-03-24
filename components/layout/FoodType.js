@@ -6,7 +6,7 @@ const FoodType = () => {
   const router = useRouter();
 
   return (
-    <div className=" flex justify-center gap-20 ">
+    <div className=" flex justify-center lg:gap-20 gap-12 ">
       <button
         onClick={() => {
           router.push("/cuisine/italian");
