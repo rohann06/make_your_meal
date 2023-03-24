@@ -20,7 +20,7 @@ const HeroSectoin = () => {
     else {
       const key = process.env.NEXT_PUBLIC_API_KEY3;
       const api = await fetch(
-        `https://api.spoonacular.com/recipes/random?apiKey=${key}&number=10&tags=sweets`
+        `https://api.spoonacular.com/recipes/random?apiKey=${key}&number=10&tags=cake`
       );
       const data = await api.json();
       
