@@ -26,14 +26,15 @@ const HeroSectoin = () => {
       
       localStorage.setItem('herosectoin', JSON.stringify(data.recipes));
       setHeroSection(data.recipes);
+
     }
   };
 
   return (
     <>
       <div className=" my-[1.5rem]">
-        <h1 className=" font-headings text-slate-600 font-medium text-[22px] lg:text-[25px] my-5">
-          Christmas recipes 🎁
+        <h1 className=" font-headings text-slate-600 font-medium text-[20px] lg:text-[25px] my-5">
+          Cake for children 👼🏼 
         </h1>
 
         <Splide
@@ -42,7 +43,7 @@ const HeroSectoin = () => {
             arrows: false,
             pagination: false,
             drag: "free",
-            gap: "5rem",
+            gap: "1rem",
           }}
         >
           {heroSection.map((recipe) => {

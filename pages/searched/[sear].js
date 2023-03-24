@@ -25,7 +25,7 @@ const Searched = () => {
     <div className=" my-5">
       <h1 className=" font-headings text-slate-600 font-bold lg:text-[30px] my-5">{sear} recipes 🍽️ : </h1>
 
-      <div className=" grid gap-10 grid-cols-4">
+      <div className=" grid lg:gap-10 gap-5 lg:grid-cols-4 grid-cols-2">
         {results.map((result) => (
           <div key={result.id}>
             <Card title={result.title} image={result.image} id={result.id}/>

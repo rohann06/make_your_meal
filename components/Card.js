@@ -5,9 +5,9 @@ const Card = ({ title, image, id }) => {
   const router = useRouter();
 
   return (
-    <div className=" relative overflow-hidden rounded-3xl lg:h-[18rem] lg:w-auto ">
+    <div className=" relative overflow-hidden rounded-3xl lg:h-[18rem] h-[12rem] lg:w-auto ">
       <Link href={`/details/${id}`}>
-          <h1 className=" text-slate-50 font-normal_text absolute z-10 bottom-0 w-full h-[20%] text-center font-medium text-sm flex justify-center align-middle">
+          <h1 className=" text-slate-50 font-normal_text absolute z-10 lg:bottom-0 bottom-6 w-full h-[20%] text-center font-medium lg:text-sm text-xs flex justify-center align-middle">
             {title}
           </h1>
           <img

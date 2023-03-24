@@ -6,7 +6,7 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const Layout = ({ children }) => {
   return (
-    <div className="lg:mt-5">
+    <div className="lg:mt-5 mt-4 lg:mx-80 mx-2">
       <Navbar />
       <AnimatePresence>
         <motion.div

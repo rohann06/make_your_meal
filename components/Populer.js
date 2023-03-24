@@ -33,7 +33,7 @@ const HeroSectoin = () => {
   return (
     <>
       <div className=" mt-[2rem] mb-10">
-        <h1 className=" font-headings text-slate-600 font-normal text-[22px] lg:text-[25px] my-5">
+        <h1 className=" font-headings text-slate-600 font-normal text-[20px] lg:text-[25px] my-5">
           Populer recipes 🍴
         </h1>
 
@@ -43,7 +43,7 @@ const HeroSectoin = () => {
             arrows: false,
             pagination: false,
             drag: "free",
-            gap: "7rem",
+            gap: "1rem",
           }}
         >
           {populer.map((recipe) => {
