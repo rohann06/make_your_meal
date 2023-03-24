@@ -25,7 +25,7 @@ const Cuisine = () => {
 
   return (
     <div className=" my-5">
-      <div className=" grid gap-10 grid-cols-4">
+      <div className=" grid lg:gap-10 gap-5 lg:grid-cols-4 grid-cols-2">
         {cuisines.map((result) => (
           <div key={result.id}>
             <Card title={result.title} image={result.image} id={result.id}/>
