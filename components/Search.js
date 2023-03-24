@@ -14,7 +14,7 @@ const Search = () => {
   };
 
   return (
-    <form className="  my-10">
+    <form className="  lg:my-10 my-7">
       <div className=" relative flex justify-center items-center">
         <FaSearch className=" text-slate-50 lg:text-[1.5rem] text-[1rem] absolute lg:left-52 left-3" />
         <input
